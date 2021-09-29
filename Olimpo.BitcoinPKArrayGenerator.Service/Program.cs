@@ -24,6 +24,7 @@ namespace Olimpo.BitcoinPKArrayGenerator.Service
                 })
                 .ConfigureServices((hostContext, services) =>
                 {
+                    services.AddSingleton<IPrivateKeyBytesGenerator, PrivateKeyBytesGenerator>();
                     services.AddHostedService<BitcoinPkArrayGeneratorWorker>();
                 });
     }

@@ -6,7 +6,7 @@ using Org.BouncyCastle.Security;
 
 namespace Olimpo.BitcoinPKArrayGenerator.Service
 {
-    public class PrivateKeyBytesGenerator
+    public class PrivateKeyBytesGenerator : IPrivateKeyBytesGenerator
     {
         public byte[] GetRandomBytes(int size, int seedStretchingIterations=5000)
         {
