@@ -8,5 +8,6 @@
     <PackageReference Include="System.Diagnostics.Debug" Version="*"/>
     <PackageReference Include="BouncyCastle.NetCore" Version="*"/>
     <PackageReference Include="Olimpo.RedisProvider" Version="*"/>
+    <PackageReference Include="StackExchange.Redis" Version="*"/>
   </ItemGroup>
 </Project>
