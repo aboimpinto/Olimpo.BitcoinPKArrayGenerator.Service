@@ -1,13 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="*"/>
-    <PackageReference Include="System.Diagnostics.Debug" Version="*"/>
-    <PackageReference Include="BouncyCastle.NetCore" Version="*"/>
-    <PackageReference Include="Olimpo.RedisProvider" Version="*"/>
-    <PackageReference Include="StackExchange.Redis" Version="*"/>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="*" />
+    <PackageReference Include="System.Diagnostics.Debug" Version="*" />
+    <PackageReference Include="BouncyCastle.NetCore" Version="*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MongoDbQueueService\MongoDbQueueService.csproj" />
   </ItemGroup>
 </Project>
