@@ -10,8 +10,6 @@ namespace Olimpo.BitcoinPKArrayGenerator.Service
     public class BitcoinPkArrayGeneratorWorker : BackgroundService
     {
         private const string GroupName = "InitialGroup";
-        private const string PublishingStreamChannelName = "BitcoinPkArrayGenerator";
-
         private readonly IPrivateKeyBytesGenerator _privateKeyBytesGenerator;
         private readonly ILogger<BitcoinPkArrayGeneratorWorker> _logger;
         private IPublisher _publisher;
@@ -24,7 +22,8 @@ namespace Olimpo.BitcoinPKArrayGenerator.Service
             this._logger = logger;
 
             // [TODO] [AboimPinto]: The ConnectionString should came from the configuration file and being injected through the constructor
-            this._publisher = new Publisher("mongodb://localhost:27017", "PkGenerators", PublishingStreamChannelName);
+            this._publisher = new Publisher("mongodb://localhost:27017", "PkGenerators", "BitcoinPkArrayGenerator");
+            // this._publisher = new Publisher();
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
