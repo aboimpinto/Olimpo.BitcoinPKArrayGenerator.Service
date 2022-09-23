@@ -26,7 +26,7 @@ namespace Olimpo.BitcoinPKArrayGenerator.Service
             isDebug = true;
             #endif
 
-            this._publisher = new Publisher(false);
+            this._publisher = new Publisher(isDebug);
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
