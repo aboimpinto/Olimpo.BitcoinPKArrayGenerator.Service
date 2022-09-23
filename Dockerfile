@@ -9,4 +9,4 @@ RUN dotnet restore && \
 FROM mcr.microsoft.com/dotnet/runtime:6.0
 WORKDIR /app
 COPY --from=build /app .
-ENTRYPOINT ["dotnet", "Olimpo.BitcoinPKArrayGenerator.Service"]
+ENTRYPOINT ["dotnet", "Olimpo.BitcoinPKArrayGenerator.Service.dll"]
