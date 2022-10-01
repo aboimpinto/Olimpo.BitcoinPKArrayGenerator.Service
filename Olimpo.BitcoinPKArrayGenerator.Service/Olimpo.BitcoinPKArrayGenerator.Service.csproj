@@ -7,7 +7,7 @@
     <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="*" />
     <PackageReference Include="System.Diagnostics.Debug" Version="*" />
     <PackageReference Include="BouncyCastle.NetCore" Version="*" />
-    <PackageReference Include="MongoDbQueueService" Version="*" />
+    <PackageReference Include="MongoDbQueueService" Version="0.0.18" />
   </ItemGroup>
 
   <!-- <ItemGroup>
