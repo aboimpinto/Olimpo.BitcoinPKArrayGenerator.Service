@@ -11,4 +11,4 @@ WORKDIR /app
 COPY --from=build /app .
 RUN mkdir /settings
 # ENTRYPOINT ["dotnet", "Olimpo.BitcoinPKArrayGenerator.Service.dll"]
-# CMD ["dotnet", "Olimpo.BitcoinPKArrayGenerator.Service.dll"]
+CMD ["dotnet", "Olimpo.BitcoinPKArrayGenerator.Service.dll"]

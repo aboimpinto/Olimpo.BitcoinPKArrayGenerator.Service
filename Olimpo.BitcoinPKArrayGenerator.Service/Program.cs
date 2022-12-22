@@ -6,7 +6,6 @@ namespace Olimpo.BitcoinPKArrayGenerator.Service;
 
 class Program
 {
-
     static void Main(string[] args)
     {
         CreateHostBuilder(args)
